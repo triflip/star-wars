@@ -3,7 +3,7 @@
 This is a React application that consumes the Star Wars API (SWAPI), allowing users to explore the saga's starships, view their details, and manage access through an authentication system.
 
 ## 🚀 Demo
-You can see the application in action here: [https://triflip.github.io/Star-Wars/]
+You can see the application in action here: [https://triflip.github.io/star-wars/]
 
 ---
 
