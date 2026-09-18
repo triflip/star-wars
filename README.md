@@ -1,132 +1,121 @@
-# 🌌 Star Wars Project - IT Academy
+# 🌌 Star Wars Project
 
-This is a React application that consumes the Star Wars API (SWAPI), allowing users to explore the saga's starships, view their details, and manage access through an authentication system.
+A React application that consumes the **Star Wars API (SWAPI)**, allowing users to explore starships, view their details, and manage access through an authentication system powered by Firebase.
 
-## 🚀 Demo
-You can see the application in action here: [https://triflip.github.io/star-wars/]
+<div align="center">
+  <img src="src/assets/screen-shoot/screen-shoot.png" width="75%" alt="Star Wars Project" />
+</div>
+
+[![Demo](https://img.shields.io/badge/View%20Demo-9932CC?style=for-the-badge)](https://triflip.github.io/star-wars/)
 
 ---
+
+## ✨ Features
+
+- **Starship explorer** — Browse a collection of Star Wars starships.
+- **Starship details** — View detailed information for each starship.
+- **Authentication** — Login and logout using Firebase Authentication.
+- **Protected routes** — Restrict access to authenticated sections.
+- **Responsive design** — Optimized for desktop and mobile devices.
+- **API integration** — Retrieve starship data from the Star Wars API (SWAPI).
 
 ## 🛠️ Technologies Used
 
-- **React** + **Vite** (Frontend)
-- **Redux Toolkit** (Global state management)
-- **React Router Dom** (Navigation and protected routes)
-- **Firebase** (Authentication and persistence)
-- **Styled Components** (Styling)
-- **Jest** & **React Testing Library** (Test suite)
-
----
+- **React + Vite** — Frontend development and build tooling.
+- **Redux Toolkit** — Global state management.
+- **React Router DOM** — Navigation and protected routes.
+- **Firebase** — Authentication and session persistence.
+- **TailwindCSS** — Styling and responsive design.
+- **Jest + React Testing Library** — Unit, component, and integration testing.
 
 ## 🧪 Testing
 
-A testing architecture has been implemented to ensure code stability:
+The project includes a testing architecture covering different parts of the application:
 
-- **Unit Testing**: Custom Hook tests (`useAuthListener`).
-- **Component Testing**: Rendering and interaction validation (`StarshipCard`).
-- **Integration Testing**: Security flow verification (`ProtectedRoute`).
+- **Unit tests** — Custom hook testing with `useAuthListener`.
+- **Component tests** — Rendering and interaction testing with `StarshipCard`.
+- **Integration tests** — Authentication flow and protected routes with `ProtectedRoute`.
 
-To run the tests:
+Run the test suite with:
+
 ```bash
-npm  test 
+npm test
+```
+
+## 📦 Local Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/triflip/star-wars.git
+   cd star-wars
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file with your Firebase configuration:
+
+   ```env
+   VITE_FIREBASE_API_KEY=your_api_key
+   VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+   VITE_FIREBASE_PROJECT_ID=your_project_id
+   VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+   VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+   VITE_FIREBASE_APP_ID=your_app_id
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+## 📁 Project Structure
+
+```text
+star-wars/
+├── public/
+│   ├── logo/
+│   ├── logo_mobile/
+│   ├── social-icons/
+│   └── background/
+├── src/
+│   ├── components/
+│   ├── features/
+│   ├── hooks/
+│   ├── pages/
+│   ├── router/
+│   ├── firebase/
+│   └── styles/
+├── index.html
+├── package.json
+├── vite.config.js
+├── jest.config.cjs
+└── README.md
+```
+
+## 📤 Deployment
+
+The application is deployed on **GitHub Pages**.
+
+The project uses Vite's `BASE_URL` configuration to ensure that assets and routes work correctly under the `/star-wars/` path.
+
+To build the project:
+
+```bash
+npm run build
+```
+
+To deploy to GitHub Pages:
+
+```bash
+npm run deploy
+```
 
 ---
 
-## 📦 Local Installation 
-1- Clone the repository: git clone https://github.com/usuari/Star-Wars.git 
-2-Install the dependencies: npm install 
-3-Create a .env file with your Firebase keys. 
-4-Run the project: npm ru🌌 Star Wars Project – IT Academy
-React application that interacts with the Star Wars API (SWAPI), allowing users to explore starships, view detailed information, and access the platform through a secure authentication system powered by Firebase.
-
-🚀 Demo
-Live version available at:
-https://triflip.github.io/Star-Wars/
-
-🛠️ Technologies Used
-React + Vite – Fast and modern frontend tooling
-
-Redux Toolkit – Global state management
-
-React Router DOM – Navigation and protected routes
-
-Firebase Authentication – Login, logout, and session persistence
-
-TailwindCSS – Styling and responsive design
-
-Jest + React Testing Library – Unit, component, and integration tests
-
-✨ Features
-Browse a list of Star Wars starships
-
-View detailed information for each starship
-
-User authentication (login/logout)
-
-Protected routes for restricted content
-
-Fully responsive UI (desktop & mobile)
-
-Deployed on GitHub Pages with correct BASE_URL handling
-
-🧪 Testing
-The project includes a testing architecture to ensure stability and reliability:
-
-Unit Tests  
-Custom hook testing (useAuthListener)
-
-Component Tests  
-Rendering and interaction validation (StarshipCard)
-
-Integration Tests  
-Authentication flow and protected routes (ProtectedRoute)
-
-Run the test suite:
-
-bash
-npm test
-📦 Local Installation
-Clone the repository
-
-bash
-git clone https://github.com/usuari/Star-Wars.git
-Install dependencies
-
-bash
-npm install
-Create a .env file with your Firebase configuration:
-
-Codi
-VITE_FIREBASE_API_KEY=xxxx
-VITE_FIREBASE_AUTH_DOMAIN=xxxx
-VITE_FIREBASE_PROJECT_ID=xxxx
-VITE_FIREBASE_STORAGE_BUCKET=xxxx
-VITE_FIREBASE_MESSAGING_SENDER_ID=xxxx
-VITE_FIREBASE_APP_ID=xxxx
-Run the development server
-
-bash
-npm run dev
-📁 Project Structure 
-
-src/
- ├── components/
- ├── features/
- ├── hooks/
- ├── pages/
- ├── router/
- ├── firebase/
- └── styles/
-public/
- ├── logo/
- ├── logo_mobile/
- ├── social-icons/
- └── background/
-📤 Deployment
-The project is deployed using GitHub Pages and Vite’s BASE_URL configuration.
-
-To deploy:
-
-bash
-npm run build
-npm run deployn dev
+Built with React, Redux Toolkit, Firebase and TailwindCSS.
